@@ -97,7 +97,7 @@ namespace RecipeMaker
         private Ingredient[] originalIngredients;
 
         
-        public void GetRecipeDetails() // this method gets the recipe details and initialise's the arrays
+        public void GetRecipeDetails() //This method gets the recipe details and initialises the arrays
         {
             Console.WriteLine("----------------------");
             Console.WriteLine("Enter the number of ingredients:");
@@ -126,7 +126,7 @@ namespace RecipeMaker
         }
 
         
-        public void DisplayRecipe() // this method display's the recipe details
+        public void DisplayRecipe() //This method display's the recipe details
         {
             Console.WriteLine("Recipe Details:");
             Console.WriteLine("Ingredients:");
@@ -158,7 +158,7 @@ namespace RecipeMaker
         }
 
         
-        public void ResetQuantities() // this method will reset ingredient quantities to their original values
+        public void ResetQuantities() //This method will reset ingredient quantities to their original values
         {
             for (int i = 0; i < ingredients.Length; i++)
             {
@@ -187,7 +187,7 @@ namespace RecipeMaker
         }
 
         
-        public void GetIngredientDetails() // this method will get the ingredient details from the user input
+        public void GetIngredientDetails() // This method will get the ingredient details from the user input
         {
             Console.Write("Enter ingredient name: ");
             Name = Console.ReadLine();
@@ -213,7 +213,7 @@ namespace RecipeMaker
         }
 
         
-        public void ScaleQuantity(double factor) // ingredient scaler, scale the quantity by either 0.5 , 2, and 3
+        public void ScaleQuantity(double factor) // Ingredient scaler, scale the quantity by either 0.5, 2, or 3
         {
             Quantity *= factor;
         }
@@ -224,7 +224,7 @@ namespace RecipeMaker
         public string Description { get; set; }
 
         
-        public void GetStepDetails() // get the step details from the user's input
+        public void GetStepDetails() // Get the step details from the user's input
         {
             Description = Console.ReadLine();
         }
